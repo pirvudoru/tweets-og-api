@@ -27,5 +27,7 @@ module Types
     def test_field
       "Hello World!"
     end
+
+    field :tweets, resolver: Resolvers::Tweets
   end
 end
