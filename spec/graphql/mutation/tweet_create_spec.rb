@@ -33,6 +33,7 @@ RSpec.describe GraphqlController, type: :request do
 
       parsed_body = JSON.parse(response.body)
       expect(parsed_body['data']["tweetCreate"]["tweet"]["uuid"]).to be_present
+      expect(parsed_body['data']["tweetCreate"]["tweet"]["uuid"].length).to eq(36)
     end
 
     it 'saves a tweet in the database' do
