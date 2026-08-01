@@ -45,5 +45,11 @@ RSpec.describe GraphqlController, type: :request do
       expect(last_tweet).to be_present
       expect(last_tweet.content).to eq("Best thing I found in a while: https://12ft.io/")
     end
+
+    it 'starts an OpenGraphScrapperJob' do
+      expect(OpenGraphScrapperJob).to receive(:perform_later).with(anything)
+
+      subject
+    end
   end
 end

@@ -3,6 +3,8 @@ class Tweet < ApplicationRecord
 
   alias_attribute :message, :content
 
+  has_many :resource_descriptions
+
   def resources
     []
   end

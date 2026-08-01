@@ -37,6 +37,11 @@ RSpec.describe GraphqlController, type: :request do
                        "uuid" => tweet.uuid,
                        "message" => tweet.content,
                        "resources" => []
+                     },
+                     {
+                       "uuid" => "4839789c-6b31-4689-b7e1-ed4ae106c4c6",
+                       "message" => "Today I learned https://ogp.me/",
+                       "resources" => []
                      }
                    ]
                  }
