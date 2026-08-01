@@ -1,9 +1,5 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  url: MyString
-  byte_size: 1
-
-two:
-  url: MyString
-  byte_size: 1
+ogp_logo:
+  url: https://ogp.me/logo.png
+  byte_size: 42

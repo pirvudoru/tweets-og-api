@@ -5,7 +5,5 @@ class Tweet < ApplicationRecord
 
   has_many :resource_descriptions
 
-  def resources
-    []
-  end
+  alias_method :resources, :resource_descriptions
 end
