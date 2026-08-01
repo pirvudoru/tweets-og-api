@@ -7,10 +7,10 @@ module Mutations
     field :tweet, Types::Tweet, null: false
 
     def resolve(content:)
+      tweet = Tweet.create!(content: content)
+
       {
-        tweet: {
-          uuid: "1231-1231-1231-1231"
-        }
+        tweet: tweet
       }
     end
   end
