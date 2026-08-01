@@ -8,5 +8,7 @@ module Types
     def test_field
       "Hello World"
     end
+
+    field :tweet_create, mutation: Mutations::TweetCreate
   end
 end
